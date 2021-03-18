@@ -1,0 +1,82 @@
+body {
+  font-family: Helvetica, sans-serif;
+}
+
+#page_1 {
+  background-color: rgb(233, 15, 15);
+}
+
+#page_2 {
+  background-color: yellow;
+}
+
+#page_3 {
+  background-color: blue;
+}
+
+#page_4 {
+  background-color: rgb(255, 0, 191);
+}
+
+h1 {
+  color: green;
+}
+h2 {
+  color: rgb(27, 170, 70);
+}
+
+a:link {
+  color: purple;
+}
+
+.ui-content {
+  display: flexbox;
+}
+
+.center {
+  text-align: center;
+  font-size: 300%;
+  margin-left: 25%;
+}
+
+#next,
+#previous {
+  margin: 10px;
+  width: 30%;
+  font-size: 60%;
+}
+
+/* Stack the two content containers 
+.main,
+.sidebar { display:block; width:100%; }
+*/
+
+/* First breakpoint at 576px */
+/* Inherits mobile styles, but floats containers to make columns */
+@media all and (min-width: 36em) {
+  .main {
+    float: left;
+    width: 60%;
+  }
+  .sidebar {
+    float: left;
+    width: 40%;
+  }
+}
+
+/* Second breakpoint at 800px */
+/* Adjusts column proportions, tweaks base H1 */
+@media all and (min-width: 50em) {
+  .main {
+    width: 70%;
+  }
+  .sidebar {
+    width: 30%;
+  }
+
+  /* You can also tweak any other styles in a breakpoint */
+  H1 {
+    color: blue;
+    font-size: 1.2em;
+  }
+}
