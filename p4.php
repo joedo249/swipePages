@@ -14,15 +14,15 @@
     <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
   </head>
   <body>
-    <div data-role="page" id="page_2">
-      <div data-role="header" style="overflow: hidden">
-        <h1>I'm a header</h1>
+    <div data-role="page" id="page_4">
+      <div header>
+        <?php include "header.php";?>
       </div>
       <!-- /header -->
       <div data-role="navbar" data-grid="c">
         <ul>
           <li>
-            <a href="p1.html" data-transition="slide" data-direction="reverse" class="ui-btn-active"
+            <a href="p1.html" data-transition="slide" class="ui-btn-active"
               >One</a
             >
           </li>
@@ -33,19 +33,17 @@
       </div>
       <!-- /navbar -->
 
-      <div role="main" class="ui-content">
-        <p>Page content goes here.</p>
-        <p>Page content goes here.</p>
-        <p>Page content goes here.</p>
-        <p>Page content goes here.</p>
-        <p>Page content goes here.</p>
-        <p>Page content goes here.</p>
-        <span class="center">Page 2</span>
-      </div>
-      <!-- /content -->
+      <div dara-role="main" class="ui-content">
+        
+        <img src="img/bureau-7-mob.jpg" alt="bureau">
 
-      <div data-role="footer">
-        <h4>Page Footer</h4>
+        <p>Page content goes here.</p>
+        <p>Page content goes here.</p>
+        <span class="center">Page 4</span>
+      </div>
+
+      <div data-role="footer" footer>
+        <?php include "footer.php";?>
       </div>
       <!-- /footer -->
     </div>

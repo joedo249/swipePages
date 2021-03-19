@@ -13,19 +13,23 @@
   </head>
   <body>
     <div data-role="page" id="page_1">
-        <div data-role="header" style="overflow: hidden">
-            <h1>I'm a header</h1>
-          </div>
-          <!-- /header -->
-            <div data-role="navbar" data-grid="c">
-              <ul>
-                <li><a href="p1.html" class="ui-btn-active">One</a></li>
-                <li><a href="p2.html">Two</a></li>
-                <li><a href="p3.html">Three</a></li>
-                <li><a href="p4.html">Four</a></li>
-              </ul>
-            </div>
-            <!-- /navbar -->
+      <div data-role="header" style="overflow: hidden">
+        <h1>I'm a header</h1>
+      </div>
+      <!-- /header -->
+      <div data-role="navbar" data-grid="c">
+        <ul>
+          <li>
+            <a href="p1.html" data-transition="slide" class="ui-btn-active"
+              >One</a
+            >
+          </li>
+          <li><a href="p2.html" data-transition="slide">Two</a></li>
+          <li><a href="p3.html" data-transition="slide">Three</a></li>
+          <li><a href="p4.php" data-transition="slide">Four</a></li>
+        </ul>
+      </div>
+      <!-- /navbar -->
 
       <div role="main" class="ui-content">
         <p>Page content goes here.</p>
