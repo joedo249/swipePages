@@ -7,6 +7,12 @@ bin-release/
 # Other files and folders
 .settings/
 
+#Ignore docx files
+*.docx
+
+#ignore .vscode
+.vscode
+
 # Executables
 *.swf
 *.air
